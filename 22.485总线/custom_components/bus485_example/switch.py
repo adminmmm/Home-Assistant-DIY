@@ -26,16 +26,16 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
                          parity='N')
 
     devices = []
-    switch=my_switch(socket, 1, 0)
+    switch=my_switch(socket, 1, 13056)
     devices.append(switch)
 
-    switch=my_switch(socket, 1, 1)
+    switch=my_switch(socket, 1, 13057)
     devices.append(switch)
 
-    switch=my_switch(socket, 1, 2)
+    switch=my_switch(socket, 1, 13058)
     devices.append(switch)
 
-    switch=my_switch(socket, 1, 3)
+    switch=my_switch(socket, 1, 13059)
     devices.append(switch)
 
     add_entities(devices)
